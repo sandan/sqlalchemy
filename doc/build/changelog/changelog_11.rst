@@ -66,6 +66,14 @@
 
     .. change::
         :tags: feature, sql
+        :pullreq: github:275
+        
+        Added a function called postfix to the DDLCompiler to allow values to 
+        be added after the table name but before the left parentheses 
+        during ```visit_create_table``` for create table ddl.
+        
+    .. change::
+        :tags: feature, sql
         :pullreq: github:231
 
         Negative integer indexes are now accommodated by rows
